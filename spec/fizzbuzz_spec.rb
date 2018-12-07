@@ -24,4 +24,14 @@ describe FizzBuzz do # Refers to the class we are testing.
       expect(check_num.fizz_buzz(5)).to eq("Buzz")
     end
   end
+
+  # describe "checks a str in added" do
+  #   it "should puts 'add a number please'" do
+  #     check_num = FizzBuzz.new
+
+  #     expect(check_num.fizz_buzz("l")).to eq("not a number")
+  #   end
+  # end
+
+
 end
