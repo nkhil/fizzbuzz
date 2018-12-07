@@ -1,8 +1,16 @@
 require 'fizzbuzz'
 
-describe FizzBuzz do
+describe FizzBuzz do # Refers to the class we are testing.
+  describe "checks if 3 and 5 is fizzbuzz" do # Describes test.
+    it "should output fizzbuzz" do # Write test for method in class.
+      check_num = FizzBuzz.new
+
+      expect(check_num.fizz_buzz(15)).to eq("FizzBuzz") # Calls method and tests output.
+    end
+  end
+
   describe "checks if 3 is fizz" do
-    it "see if num is fizzbuzz" do
+    it "should output fizz" do
       check_num = FizzBuzz.new
 
       expect(check_num.fizz_buzz(3)).to eq("Fizz")
@@ -12,11 +20,8 @@ describe FizzBuzz do
   describe "checks if 5 is buzz" do
     it "should output buzz" do
       check_num = FizzBuzz.new
+
       expect(check_num.fizz_buzz(5)).to eq("Buzz")
     end
   end
-
-
 end
-
-
